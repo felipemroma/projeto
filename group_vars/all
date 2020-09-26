@@ -1,0 +1,17 @@
+---
+aws_access_key: "AKIA5A5MMGBJ2XEKBJ7X"
+aws_secret_key: "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"
+
+application: "wordpress"
+target_env: "prod"
+aws_region: "us-east-1"
+aws_region_short: "ue1"
+aws_region_az: "c"
+vpc_name: "vpc-{{ aws_region_short }}-{{ target_env }}-{{ application }}"
+vpc_cidr_block: "172.27.0.0/16"
+public_subnet_1_cidr: "172.27.0.0/18"
+public_subnet_2_cidr: "172.27.64.0/18"
+private_subnet_1_cidr: "172.27.128.0/18"
+private_subnet_2_cidr: "172.27.192.0/18"
+keypair_name: "roma-key"
+ssh_pubkey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDejDznWQkG965i2SHSygn56OGpnlEjyoyDJC92cJrZpK5ViF4V1lF/3B0EJBdpWhZTElK4Pl6CTqRf8n1NyM8A9k3JlFMxvXscFLelBMAcnJbOiTe75ryhpJ+dzUKgxkHLCAgeuZaO1LnnpVA5pU74O4m5ToPONfn5TyAYtMJMTqhf5iSEWLNJmX5/y5qOO4QlIZ8d6/z+ic6SI6rzNOB4QvO/pgTlMXsaRoPBYHqD91t+WWf9WGAsDGotdRZ59ZCW3SPHGkzKX4PwhdxVASjS4SQsFnKUaXNhhsy8bGMCvGVQsbNfDIo6TtfA/bF72fNwxgptbtmgGdiF+K4eJbd66bd9wkihTWwziAGGj/aBJd3bIWVktWm0l5ovXGy6fcp6rlOROK4KMiq604qGHInlOh9SeFyC7BLOfCN0/qoSOzbwl8CGXorRwD8sVttdycyAoEYkbQWbU3P5fj9wBQxT9stEO6CC5VG3osoT7JCYS2ZrF3KUngR1B+vZAqZbX8U= roma'

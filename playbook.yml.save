@@ -1,0 +1,5 @@
+     - { role: vpc, tags: [ 'vpc', 'infra', 'always' ] }---
+- hosts: localhost
+  connection: local
+  roles:
+    - { role: keypairs, tags: [ 'keypairs', 'infra' ] }
